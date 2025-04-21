@@ -67,15 +67,17 @@ const _Layout = () => {
                     bottom: 40,
                     width: '70%',
                     marginLeft: 55,
-                    backgroundColor: 'white',
+                    backgroundColor: '#000000d1',
                     height: 60,
-                    borderRadius: 20,
+                    borderRadius: 50,
                     paddingTop: 10,
                     paddingBottom: 10,
-                    shadowColor: '#000',
-                    shadowOpacity: 0.1,
-                    shadowRadius: 10,
-                    elevation: 5,
+                    borderColor: 'white',
+                    borderWidth: 0.3
+                    // shadowColor: '#000',
+                    // shadowOpacity: 0.1,
+                    // shadowRadius: 10,
+                    // elevation: 5,
                 }
 
             }}>
@@ -94,7 +96,7 @@ const _Layout = () => {
                                 <Component
                                     name={name}
                                     size={24}
-                                    color={focused ? 'black' : 'gray'}
+                                    color={focused ? 'white' : 'gray'}
                                 />
                             );
                         },
