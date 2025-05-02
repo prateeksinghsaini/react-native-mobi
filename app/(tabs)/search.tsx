@@ -1,4 +1,4 @@
-import { View, Text, FlatList, Image } from 'react-native'
+import { View, Text, FlatList, Image, ActivityIndicator } from 'react-native'
 import React from 'react'
 import MovieCard from '@/components/MovieCard'
 import useFetch from '@/services/useFetch'
@@ -40,8 +40,9 @@ const search = () => {
           <>
             <Image source={require("../../assets/images/logo.png")} className="w-12 h-10 mt-20 mb-5 mx-auto" />
             <View className='mb-5'>
-              <SearchBar placeholder='Search movies ...' />
+              <SearchBar placeholder='Search movies ...'  />
             </View>
+            {moviesLoading && <ActivityIndicator size="large" />}
           </>
         }
       />
